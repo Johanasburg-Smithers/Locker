@@ -13,7 +13,7 @@ def lock() -> None:
 def unlock() -> None :
     input_password: str = getpass('Enter Password: ')
     os.system('cls')
-    if input_password == '7391824562010':
+    if input_password == 'PASSWORD HERE':
         passed()
     else:
         failed()
@@ -30,8 +30,8 @@ def failed() -> None:
     os.system('cls')
     unlock()
 
-os.chdir(r'C:\Users\anna_\Desktop\Stuff and Things')
-if r'Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}' in os.listdir(r'C:\Users\anna_\Desktop\Stuff and Things'):
+os.chdir(r'FOLDER DIRECTORY')
+if r'Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}' in os.listdir(r'FOLDER DIRECTORY'):
     unlock()
 else:
     lock()
